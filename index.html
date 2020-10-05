@@ -48,14 +48,14 @@
 
 <!-- BEGIN: Custom CSS-->
 <link rel="stylesheet" type="text/css" href="https://dev.denovosol.co.za/assets/css/style.css">
-<link rel="stylesheet" type="text/css" href="styles.css">    
+<link rel="stylesheet" type="text/css" href="styles.css">
 <!-- END: Custom CSS-->
 
 </head>
 <!-- END: Head-->
 
 <!-- BEGIN: Body-->
-
+<p>Here is another test!</p>
 <body class="vertical-layout vertical-menu-modern boxicon-layout 2-columns  navbar-sticky footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
 <!-- BEGIN: Header-->
 <div class="header-navbar-shadow"></div>
@@ -287,15 +287,15 @@
 <input type="text" class="form-control" value="001-1" disabled="">
 <input type="hidden" name="invoice_number" value="001-1">
 </fieldset>
-    
+
 <label>Invoice date <span class="text-danger">*</span></label>
 <fieldset class="form-group position-relative has-icon-left">
-    
+
 <input style="width: 200px;" id="invoice-date" type="date" class="form-control col-md-6" placeholder="Select Date" name="invoice_date" value="">
 <div class="form-control-position">
 <i class='bx bx-calendar'></i>
 </div>
-</fieldset>        
+</fieldset>
 
 <fieldset class="form-group">
 <label>Tariff period <span class="text-danger">*</span></label>
@@ -304,18 +304,18 @@
 <option value="2" >01/04/2018 - 31/03/2019</option><option value="3" >01/04/2019 - PRESENT</option>
 </select>
 </fieldset>
-    
+
 <fieldset class="form-group">
-<label>Services rendered <span class="text-danger">*</span></label> 
-        
+<label>Services rendered <span class="text-danger">*</span></label>
+
 <select id="services" class="form-control" name="ab" onchange="myFunction(), myFunction2()">
     <option class="option" value="">Select one</option>
     <option class="option" value="basic"><span id="bls">Basic Life Support</span></option>
     <option class="option" value="intermediate">Intermediate Life Support</option>
     <option class="option" value="advanced">Advanced Life Support / ICU</option>
-</select>    
+</select>
 
-</fieldset>   
+</fieldset>
 
 <div id="hospital-group" class="hidden">
 <fieldset class="form-group">
@@ -324,8 +324,8 @@
 <label class="radio-inline mr-2 mb-1"><input id="yes-button" type="radio" name="hospital-radio" value="yes" class="invoice-type"> Yes</label>
 <label class="radio-inline mr-2 mb-1"><input id="no-button" type="radio" name="hospital-radio" value="no" class="invoice-type" checked> No</label>
 </fieldset>
-</div>    
-    
+</div>
+
 
 <div id="process-group" class="hidden">
 <fieldset class="form-group">
@@ -334,7 +334,7 @@
 <label class="radio-inline mr-2 mb-1"><input id="auto-button" type="radio" name="optradio" value="auto" class="invoice-type"> Auto</label>
 <label class="radio-inline mr-2 mb-1"><input id="manual-button" type="radio" name="optradio" value="manual" class="invoice-type"> Manual</label>
 </fieldset>
-</div>    
+</div>
 
 <div id="area-group" class="hidden">
 <fieldset class="form-group">
@@ -343,11 +343,11 @@
 <option value="">Select one</option>
 <option value="durban" >Durban</option><option value="pretoria" >Pretoria</option><option value="johannesburg" >Johannesburg</option>
 </select>
-</fieldset>  
-</div>        
+</fieldset>
+</div>
 
 <div id="odometer-group" class="hidden">
-<label>Odometer readings (km) <span class="text-danger">*</span></label>    
+<label>Odometer readings (km) <span class="text-danger">*</span></label>
 <div class="row">
     <div class="col">
       <input type="text" class="form-control" placeholder="Start">
@@ -358,55 +358,55 @@
     <div class="col">
       <input type="text" class="form-control" placeholder="At Hospital">
     </div>
-  </div>   
-</div>        
-<br> 
+  </div>
+</div>
+<br>
 
 <div id="times-group" class="form-group hidden">
-<label for="time-selection">Times<span class="text-danger">*</span></label>       
-  <div class="form-row">        
+<label for="time-selection">Times<span class="text-danger">*</span></label>
+  <div class="form-row">
     <div style="width: 105px;" class="col">
-    <label style="font-size: 0.7em; font-weight: 200;" for="dispatched-time">Dispatched</label>     
+    <label style="font-size: 0.7em; font-weight: 200;" for="dispatched-time">Dispatched</label>
       <input style="font-size: 0.9em;" type="time" id="dispatched-time" class="form-control" placeholder="Select time">
     </div>
     <div style="width: 105px;" class="col">
-    <label style="font-size: 0.7em; font-weight: 200;" for="dispatched-time">Arrive Scene</label>     
+    <label style="font-size: 0.7em; font-weight: 200;" for="dispatched-time">Arrive Scene</label>
       <input style="font-size: 0.9em;" type="time" id="dispatched-time" class="form-control" placeholder="Select time">
     </div>
       <div style="width: 105px;" class="col">
-    <label style="font-size: 0.7em; font-weight: 200;" for="dispatched-time">Depart Scene</label>     
+    <label style="font-size: 0.7em; font-weight: 200;" for="dispatched-time">Depart Scene</label>
       <input style="font-size: 0.9em;" type="time" id="dispatched-time" class="form-control" placeholder="Select time">
     </div>
       <div style="width: 105px;" class="col">
-    <label style="font-size: 0.7em; font-weight: 200;" for="dispatched-time">Arrive Hospital</label>     
+    <label style="font-size: 0.7em; font-weight: 200;" for="dispatched-time">Arrive Hospital</label>
       <input style="font-size: 0.9em;" type="time" id="dispatched-time" class="form-control" placeholder="Select time">
     </div>
       <div style="width: 105px;" class="col">
-    <label style="font-size: 0.7em; font-weight: 200;" for="dispatched-time">Available</label>     
+    <label style="font-size: 0.7em; font-weight: 200;" for="dispatched-time">Available</label>
       <input style="font-size: 0.9em;" type="time" id="dispatched-time" class="form-control" placeholder="Select time">
     </div>
-      
-  </div>   
-</div>        
+
+  </div>
+</div>
 
 <!--
 <div class="form-row">
 <fieldset id="time-selection" class="form-group">
 <label for="time-selection">Times<span class="text-danger">*</span></label>
-<label style="font-size: 0.7em; font-weight: 200;" for="dispatched-time">Dispatched</label>    
+<label style="font-size: 0.7em; font-weight: 200;" for="dispatched-time">Dispatched</label>
     <div style="width: 100px;" class="md-form md-outline">
 </div>
-    
-<label style="font-size: 0.7em; font-weight: 200; width: 100px" for="dispatched-time">Arrive Scene</label>    
+
+<label style="font-size: 0.7em; font-weight: 200; width: 100px" for="dispatched-time">Arrive Scene</label>
     <div style="width: 100px;" class="md-form md-outline">
-  
-</div>    
-    
-</fieldset>  
-</div>        
+
+</div>
+
+</fieldset>
+</div>
 -->
-    
-    
+
+
 
 <fieldset class="form-group">
 <button id="download-button" type="button" class="btn btn-primary invoice-preview-button save-claim-form-trigger" data-toggle="modal" data-target="#modal-invoice-preview" data-claim-id="55"><i class="bx bx-download"></i> PREVIEW / DOWNLOAD INVOICE</button>
@@ -992,17 +992,17 @@ value="Advanced Life Support / ICU"
 <!-- END: Page JS-->
 
 <script src="https://dev.denovosol.co.za/assets/js/scripts.js"></script>
-    
-<script src="script.js"></script> 
-    
+
+<script src="script.js"></script>
+
 <script>
-    
+
   $('.datepicker').pickadate({
   closeOnSelect: false,
   closeOnClear: false
 })
-    
-    </script>    
+
+    </script>
 
 </body>
 <!-- END: Body-->
