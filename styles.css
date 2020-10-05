@@ -1,0 +1,24 @@
+#download-button {
+    
+    display: none;
+}
+
+#times-label {
+    
+    font-size: 0.7em;
+}
+
+#time-selection {
+    
+    width: 30px;
+}
+
+.hidden {
+    
+    display: none;
+}
+
+.visible {
+    
+    display: inline-block;
+}
